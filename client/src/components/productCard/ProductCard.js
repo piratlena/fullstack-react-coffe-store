@@ -26,7 +26,7 @@ const ProductCard = () => {
                 
                 <div className="about__subtitle">Description:</div>
             <ul>
-            {description.map((info, index) => <li key={index}>{info.title}{info.description}</li>)}
+            {description.map((info, index) => <li key={index} className={index % 2=== 0 ? "about__color-dark" : "about__color-light" }>{info.title}{info.description}</li>)}
             </ul>
             </div>
            <button className="btn__cart btn">Add To Cart</button>

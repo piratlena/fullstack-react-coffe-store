@@ -60,6 +60,12 @@
         list-style-type: none;
        
      }
+     &__color-dark {
+        background: $dark
+     }
+     &__color-light {
+        background: $light
+     }
  }
  .btn__cart {
     width: 90px;

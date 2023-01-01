@@ -26,7 +26,9 @@ const AuthForm = () => {
                placeholder="Password*"/>
             </div>
             
-             <div className="modal__auth">
+       
+            <button type="submit" className="btn btn__login">Login</button>
+            <div className="modal__auth">
              {isLogin ? <div>Not a member? <NavLink to={REGISTRATION_ROUTE}>Create your account</NavLink></div>
                         :
             <div>
@@ -34,7 +36,6 @@ const AuthForm = () => {
             </div>
             }
              </div>
-            <button type="submit" className="btn btn__login">Login</button>
         </form>
         </div>
     </div>
