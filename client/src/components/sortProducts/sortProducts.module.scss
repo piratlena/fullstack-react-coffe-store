@@ -1,0 +1,90 @@
+@import '../../styles/variables.scss';
+.sort {
+    margin: 0 auto;
+    max-width: 720px;
+    display: flex;
+    justify-content: space-between;
+    &__block{
+        max-width: 290px;
+        display: flex;
+        justify-content: space-between;
+        
+        &-name {
+            margin-right: 15px;
+        }
+        input {
+            max-width: 180px;
+            height: 30px;
+            border: 1px solid $dark;
+            border-radius: 5px;
+            outline: none;
+            &:focus {
+                border: 1px solid rgba(0, 0, 0, .2);
+            }
+        }
+        &-clear {
+            width: 18px;
+            height: 18px;
+            opacity: 0.3;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    &__filter {
+        display: flex;
+        justify-content: space-between;
+        &-text {
+            margin-right: 20px;
+        }
+        &-categories {
+            ul {
+                display: flex;
+                li {
+                    width: 75px;
+                    height: 30px;
+                    padding: 7px 0px 5px 0px;
+                    border-radius: 5px;
+                    background: #FFFFFF;
+                    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+                    margin-right: 10px;
+                    list-style-type: none;
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 12px;
+                    cursor: pointer;
+                    transition: background-color 0.1s ease-in-out;
+              
+                    &:hover {
+                      background-color: darken(#f9f9f9, 2%);
+                    }
+              
+                    &:active {
+                      background-color: darken(#f9f9f9, 5%);
+                    }
+              
+                    &.active {
+                      background-color: #282828;
+                      color: #fff;
+                    }
+                  }
+            }
+        }
+    }
+ 
+}
+.results {
+    margin: 0px auto;
+    width: 1000px;
+    min-height: 640px;
+    padding-top: 62px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 11px;
+    grid-row-gap: 20px;
+}

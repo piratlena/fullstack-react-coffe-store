@@ -1,0 +1,71 @@
+@import '../../styles/variables.scss';
+
+.header {
+    position: relative;
+    
+    &__wrapper {
+        position: absolute;
+        width: 100%;
+        padding-top: 20px;   
+    }
+    &__info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu {
+        display: block;
+        margin-left: 0;
+    }
+    
+    img {
+        display: block;
+    }
+    &__nav{
+        margin-left: 35px;
+        transform: translateY(-22px);
+        max-width: 380px;
+    }
+    &__list {
+        
+        display: flex;
+        &-item {
+            margin-right: 40px;
+        }
+       
+        a {
+            display: block;
+            font-family: 'Merienda';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 17px;
+            color: $light;
+            transition: 3s ease-out;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        li {
+            list-style-type: none;
+        }
+    }
+    &__cart {
+        display: flex;
+        justify-content: space-between;
+        &-box {
+            display: block;
+            margin-right: 10px;
+        }
+        svg path {
+                fill: #fff;
+            }
+        
+        li {
+            margin-right: 30px;
+            list-style-type: none;
+            color: $light;
+        }
+    }
+    
+}

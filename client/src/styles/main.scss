@@ -1,0 +1,55 @@
+@import './variables.scss';
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $light;
+}
+
+* {
+  font-family: Merienda;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  margin: 0 auto;
+  
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 58px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+}
+a {
+  text-decoration: none;
+}
+
+@import '../components/authForm/authForm.module.scss';
+@import '../components/navBar/navBar.module.scss';
+@import '../components/hero/hero.module.scss';
+@import '../components/logoLight/logoLight.module.scss';
+@import '../components/logoDark/logoDark.module.scss';
+@import '../components/aboutUs/aboutUs.module.scss';
+@import '../components/footer/footer.module.scss';
+@import '../components/bestCoffe/bestCoffe.module.scss';
+@import '../components/cards/cards.module.scss';
+@import '../components/promo/promo.module.scss';
+@import '../components/aboutBeans/aboutBeans.module.scss';
+@import '../components/typeBar/typeBar.module.scss';
+@import '../components/sortProducts/sortProducts.module.scss';
+@import '../components/productCard/productCard.module.scss';
