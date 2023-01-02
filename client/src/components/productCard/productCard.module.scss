@@ -40,6 +40,12 @@
             transform: translateY(7px);
             margin-left: 5px;
         }
+        &-price {
+            font-weight: 400;
+            font-size: 24px;
+            transform: translateY(-4px);
+            margin-left: 10px;
+        }
      }
      &__descr-first {
          padding-top: 30px;
@@ -58,10 +64,12 @@
 
      li {
         list-style-type: none;
-       
+       &:last-child {
+        margin-bottom: 20px;
+       }
      }
      &__color-dark {
-        background: $dark
+        background: #bb9885
      }
      &__color-light {
         background: $light
